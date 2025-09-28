@@ -8,7 +8,8 @@ import { Portfolio } from './components/Portfolio';
 import { Events } from './components/Events';
 import { News } from './components/News';
 import { Footer } from './components/Footer';
-import { CustomCursor } from './components/helpers/CustomCursor';
+// Corrected the import from './components/helpers/CustomCursor' to match the actual file name
+import { CustomCursor } from './components/helpers/customCursor';
 import { useLoading } from './components/helpers/LoadingScreen';
 import { BackgroundController } from './components/helpers/BackgroundController';
 import { useSectionObserver } from './components/helpers/useSectionObserver';
@@ -38,7 +39,6 @@ function App() {
         />
       </div>
 
-      {/* Added the `scroll-smooth` class to enable smooth scrolling */}
       <main ref={scrollRef} className="scroll-smooth relative z-20 h-screen overflow-y-auto overflow-x-hidden">
         <Hero ref={sectionRefs.hero} />
         <About ref={sectionRefs.about} />
@@ -53,4 +53,3 @@ function App() {
 }
 
 export default App;
-
