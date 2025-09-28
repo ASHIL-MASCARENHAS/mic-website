@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import App from './app.jsx'
 // This line imports all of our styles into the application.
 import './index.css' 
 
